@@ -1,5 +1,4 @@
 /* See LICENSE file for copyright and license details. */
-#include <X11/XF86keysym.h>
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
@@ -77,9 +76,6 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *pcmanfm[]  = { "pcmanfm", NULL };
 static const char *browser[]  = { "brave-browser", NULL };
 static const char *rofi[] = { "drun", NULL };
-static const char *upvol[]   = { "changeVolume", "5%+",     NULL };
-static const char *downvol[] = { "changeVolume", "5%-",     NULL };
-static const char *mutevol[] = { "volmute", "toggle",  NULL };
 #include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -116,9 +112,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
-	{ 0,                            XF86XK_AudioMute, spawn, {.v = mutevol } },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
