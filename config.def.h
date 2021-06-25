@@ -13,11 +13,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Ubuntu:size=14" };
 static const char dmenufont[]       = "Ubuntu:size=14";
-static const char col_gray1[]       = "#000000";
+static const char col_gray1[]       = "#1e1f29";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray3[]       = "#44475a";
 static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#39679e";
+static const char col_cyan[]        = "#6e5991";
 static const char col_red[]         = "#ff0000";
 static const char *colors[][3]      = {
 	/*                      fg         bg         border   */
@@ -30,9 +30,9 @@ static const char *colors[][3]      = {
     [SchemeInfoNorm]  = { col_gray3, col_gray1,  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 /* Pulseaudio volume sinks (adjust default to whatever device u need controlled) */
-static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
-static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
-static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "1", "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "1", "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "1", "toggle",  NULL };
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
