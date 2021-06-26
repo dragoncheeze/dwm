@@ -13,11 +13,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Ubuntu:size=14" };
 static const char dmenufont[]       = "Ubuntu:size=14";
-static const char col_gray1[]       = "#1e1f29";
+static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#44475a";
+static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#6e5991";
+static const char col_cyan[]        = "#2477c6";
 static const char col_red[]         = "#ff0000";
 static const char *colors[][3]      = {
 	/*                      fg         bg         border   */
